@@ -1,0 +1,7 @@
+<input type="file" id="foo" /><span id="result"></span>
+
+<script>
+    document.getElementById("foo").addEventListener("change", (ev) => {
+        document.getElementById("result").innerText = `Event was triggered with ${ev.target.files.length} file!`
+    })
+</script>
